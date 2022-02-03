@@ -1,0 +1,317 @@
+body{
+	background: #E5E5E5;
+	margin: 0;
+	padding: 0;
+	font-family: "roboto", sans-serif !important;
+}
+
+.meals-wrapper{
+	padding: 0 14px;
+    margin-top: 117px;
+}
+.meal-wrap{
+	    background: #fff;
+    padding: 14px 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.25);
+    margin-bottom: 16px;
+    display: flex;
+    cursor: pointer;
+}
+.img-wrap{
+    width: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-wrap>img{width: 100%;
+    border-radius: 10px;}
+
+.content-wrap{
+	padding-left: 10px;
+    width: calc(100% - 110px);
+}
+.content-wrap>p{
+	margin: 0;
+	line-height:18px !important;
+	font-family: "roboto", sans-serif !important;
+}
+
+.content-wrap>.meal-title{
+    color: #013F32;
+    font-size: 20px;
+    margin:0 0 5px 0;
+	line-height:22px !important;
+	font-family: "roboto", sans-serif !important;
+}
+
+.content-wrap>.meal-price,.content-wrap>.meal-payment{
+	font-size: 16px;
+	color: #767676;
+	margin-bottom: 5px;
+	font-family: "roboto", sans-serif !important;
+}
+
+.meal-option{
+	display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.meal-option>.meal-state{
+	    color: #013F32;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+	font-family: "roboto", sans-serif !important;
+
+}
+.meal-option>.inactive{
+	color:#9B002A;
+}
+.meal-option>.meal-reactive{
+	background: #9B002A;
+    border-radius: 15px;
+    color: #fff;
+    margin: 0;
+    padding: 2px 5px;
+}
+.meal-option>.meal-menus>i{
+	font-size: 25px;
+    color: #013F32;
+}
+
+.btn-meal-prep{
+	width: 200px;
+    height: 50px;
+    background: #013F32;
+    color: #fff;
+    border: #013F32;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.25);
+    padding: 0px !important;
+	font-family: "roboto", sans-serif !important;
+}
+
+
+
+
+
+
+
+/*-- ===========================================
+========== Active Popup ===================----*/
+
+.aw-overlay{
+	    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+.active-menu-wrap{
+	    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 21px 23px;
+    border-radius: 20px;
+    background: #013F32;
+    box-shadow: 0 1px 6px #222;
+    box-sizing: border-box;
+    margin-left: auto;
+    transition: all 1s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: -110%;
+
+}
+.btn-meal-bordered{
+	    border: 1px solid #fff;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    text-align: center;
+	font-family: "roboto", sans-serif !important;
+}
+
+
+
+
+
+/*-- ===========================================
+========== Pause Popup ===================----*/
+
+.pause-popup-wrap ,.note-popup-wrap,.switch-popup-wrap,.plan-popup-wrap{
+    position: absolute;
+    top: 150%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: calc(100% - 28px);
+    padding: 0 14px;
+    z-index: 99999;
+    width: 100%;
+}
+.ques-wrap{
+	    background: #fff;
+    padding: 42px 40px;
+    border-radius: 20px;
+}
+p.ques-title {
+    font-weight: 700;
+    font-size: 16px;
+	font-family: "roboto", sans-serif !important;
+	line-height:16px;
+}
+.ques-wrap>label {
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+    display: block;
+    margin-bottom: 5px;
+	font-family: "roboto", sans-serif !important;
+}
+.ques-wrap>textarea{
+	    background: #FFFFFF;
+    box-shadow: inset 0px 0px 4px rgb(0 0 0 / 50%);
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    border: 0px;
+	font-family: "roboto", sans-serif !important;
+}
+.pause-popup-wrap>.btn-meal-prep,.note-popup-wrap>.btn-meal-prep,.plan-popup-wrap>.btn-meal-prep{
+width: 80% !important;
+    border-radius: 15px !important;
+    margin: 20px 10% !important;
+    padding: 0px !important;
+}
+
+
+
+
+
+
+
+/*-- ===========================================
+========== Note Popup ===================----*/
+.removeNote,.removePause,.removeActive,.removeswitch,.removeVariation,.removePlan{
+	position: absolute;top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px !important;
+  height: 30px;margin: 0 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #C4C4C4;
+  -webkit-transition: .4s;
+  transition: .4s;
+	width:60px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #013F32;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #C4C4C4;
+}
+
+input:focus + .slider {
+  box-shadow: none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(29px);
+  -ms-transform: translateX(29px);
+  transform: translateX(29px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.note-state{
+	display: flex;justify-content: center;
+	margin-bottom:10px;
+	
+	}
+	.note-state p{
+
+	margin-top: 0px;
+	}
+.note-state>.regular{
+	font-weight: 400;
+	color:rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 18px;
+	font-family: "roboto", sans-serif !important;
+}
+
+
+
+
+
+
+
+/*-- ===========================================
+========== Variationb Popup ===================----*/
+
+.variation-menu-wrap{
+	    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 21px 23px;
+    border-radius: 20px;
+    background: #013F32;
+    box-sizing: border-box;
+    transition: all 1s;
+    position: absolute;
+    top: 150%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin: 0 20%;
+}
